@@ -12,9 +12,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="rotate-notification">
-        <p>Vui lòng xoay màn hình sang chế độ ngang để có trải nghiệm tốt nhất!</p>
-      </div>
+  
     <div class="card">
       <div class="outside">
         <div class="front">
@@ -34,27 +32,6 @@
         </div>
       </div>
     </div>
-    <script>
-        // Kiểm tra nếu người dùng xoay màn hình
-        window.addEventListener("orientationchange", function() {
-          const rotateNotification = document.getElementById("rotate-notification");
-          if (window.matchMedia("(orientation: landscape)").matches) {
-            rotateNotification.style.display = "none";
-          } else {
-            rotateNotification.style.display = "block";
-          }
-        });
-    
-        // Kiểm tra hướng ban đầu khi tải trang
-        window.addEventListener("load", function() {
-           console.log("okokokokok")
-            const rotateNotification = document.getElementById("rotate-notification");
-          if (window.matchMedia("(orientation: portrait)").matches) {
-            rotateNotification.style.display = "block";
-          } else {
-            rotateNotification.style.display = "none";
-          }
-        });
-      </script>
+
   </body>
 </html>

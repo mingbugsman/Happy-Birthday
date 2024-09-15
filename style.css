@@ -44,6 +44,33 @@
     align-items: center;
     left: 50%;
   }
+
+  /* notification */
+  #rotate-notification {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+    z-index: 1000;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+
+  #rotate-notification p {
+    font-size: 24px;
+    margin-top: 20%;
+  }
+
+  @media screen and (orientation: portrait) {
+    #rotate-notification {
+      display: block;
+    }
+  }
   .outside {
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;

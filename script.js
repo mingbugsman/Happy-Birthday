@@ -1,4 +1,5 @@
 const card = document.querySelector(".card");
+const canvas = document.getElementById("c")
 card.style.display = "none";
 
 var w = c.width = window.innerWidth,
@@ -373,8 +374,11 @@ function anim(){
 	for( var l = 0; l < letters.length; ++l ){
 		
 		letters[ l ].step();
-		if( letters[ l ].phase !== 'done' )
-			done = false;
+		if( letters[ l ].phase !== 'done' ){
+		   done = false;
+		   canvas.style.display = "none";
+		}
+			
 			
 	}
 	

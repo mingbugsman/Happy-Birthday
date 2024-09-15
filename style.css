@@ -5,6 +5,8 @@
     font-family: "Poppins", sans-serif;
   }
   body {
+    display: flex;
+    justify-content: center;
     background-color: #fdbf00;
   }
   .card {
@@ -44,33 +46,6 @@
     align-items: center;
     left: 50%;
   }
-
-  /* notification */
-  #rotate-notification {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.8);
-    color: white;
-    text-align: center;
-    z-index: 1000;
-    padding: 20px;
-    font-family: Arial, sans-serif;
-  }
-
-  #rotate-notification p {
-    font-size: 24px;
-    margin-top: 20%;
-  }
-
-  @media screen and (orientation: portrait) {
-    #rotate-notification {
-      display: block;
-    }
-  }
   .outside {
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
@@ -90,6 +65,9 @@
   }
   .front {
     background-color: #ffffff;
+  }
+  .front p {
+    font-size: 12px;
   }
   .back {
     transform: rotateY(180deg);
@@ -125,4 +103,28 @@
   .inside .cover img {
     max-width: 60%;
     border-radius: 5px;
+  }
+
+
+  .effect {
+    margin: 0 0;
+    position: absolute;
+    font: 16px Verdana;
+    color: #eee;
+    height: 25px;
+    top: calc( 100vh - 30px );
+    text-shadow: 0 0 2px white;
+  }
+  .effect a {
+    text-decoration: none;
+    color: #aaa;
+  }
+  span {
+    font-size: 11px;
+  }
+  .effect > a:first-of-type {
+    font-size: 20px;
+  }
+  body {
+    overflow: hidden;
   }

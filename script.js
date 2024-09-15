@@ -376,7 +376,7 @@ function anim(){
 		letters[ l ].step();
 		if( letters[ l ].phase !== 'done' ){
 		   done = false;
-		   canvas.style.display = "none";
+		   
 		}
 			
 			
@@ -387,6 +387,7 @@ function anim(){
 	if (done) {
         isAnimating = false; // Tắt hiệu ứng khi tất cả các chữ đã hoàn thành
 		card.style.display = "block"
+		canvas.style.display = "none";
 	}
 }
 
